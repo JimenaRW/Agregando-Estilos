@@ -22,7 +22,7 @@
     background-color: white;
 }
 .home header p {
-    margin-left: 45px;
+    text-align: center;
 }
 
 .home header .burger-container {
@@ -42,7 +42,11 @@
 .home header .burger-container a.burger i {
     font-size: 1rem;
 }
-.home  header  ul  a  {  
+
+.home header ul {
+    display: none;
+}
+.home header ul a {  
     display: block;
 }
 
@@ -53,8 +57,56 @@
 
 /* main */
 main {
+    background: var(--colorGrisClaro);
+}
+main h2{
+    margin: 10px;
+    color: var(--colorGrisOscuro);
+}
+
+.home main img {
+    width:100%;
+}
+
+.home section {
+    width: 90vw;
+    margin: auto;
+}
+
+.home main section article.caja {
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.home main section article.caja .caja-hija {
+    box-sizing: border-box;
+    border-top: solid 1px #ebebeb;
+}
+.home main section article.caja .caja-hija a {
+    display: inline-block;
+    box-sizing: content-box;
+}
+.home main section article.caja .caja-hija a i {
+    color: var(--colorVerde);
+    margin: 15px;
+    font-size: 1rem;
+}
+.home main section article.caja .caja-hija p:first-of-type {
+    font-size: var(--fontSize-price);
+    margin:0;
+}
+.home main section article.caja .caja-hija p:nth-last-child(2) {
+    font-size: var(--fontSize-discount);
+    color: var(--colorVerde);
+    margin: 0;
+}
+.home main section article.caja .caja-hija p:last-child {
+    font-size: var(--fontSize-detail);
+    color: var(--colorGrisOscuro);
     display: none;
 }
+
 
 
 /* footer */
@@ -84,4 +136,26 @@ main {
     color: var(--colorGrisOscuro);
     font-size: var(--fontSize-discount);
     font-weight: bold;
+}
+
+@media screen and (min-width:361px) {
+    /* header */
+    .home header .burger-container {
+        display: none;
+    }
+    .home header ul {
+        display: block;
+    }
+
+    /* main */
+    .home main section article.caja {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+    .home main section article.caja .caja-hija p:last-child {
+        display: block;
+    }
+    
+}
+@media screen and (min-width:769px) {
+    
 }
