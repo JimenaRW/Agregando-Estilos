@@ -25,6 +25,7 @@
     text-align: center;
 }
 
+/* Burger */
 .home header .burger-container {
     height: 60px;
 }
@@ -43,6 +44,7 @@
     font-size: 1rem;
 }
 
+/* nav-bar */
 .home header ul {
     display: none;
 }
@@ -138,7 +140,9 @@ main h2{
     font-weight: bold;
 }
 
-@media screen and (min-width:361px) {
+
+/* tablet */
+@media (min-width:481px) {
     /* header */
     .home header .burger-container {
         display: none;
@@ -156,6 +160,7 @@ main h2{
     }
     
 }
-@media screen and (min-width:769px) {
-    
+/* laptop */
+@media (min-width:769px) {
+    /* no hubo directriz en el tp que marque que modificar en los demás tamaños */
 }
