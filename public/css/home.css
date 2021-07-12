@@ -47,7 +47,8 @@
 /* nav-bar */
 .home header ul {
     display: none;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 10px 0;
 }
 .home header ul a {  
     display: block;
